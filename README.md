@@ -1,76 +1,140 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Personal Portfolio Website
 
-<br/>
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Technology Stack](#technology-stack)
+- [Installation & Setup](#installation--setup)
+- [Usage Guide](#usage-guide)
+- [Component Details](#component-details)
+- [Styling & Theming](#styling--theming)
+- [Deployment](#deployment)
+- [Contribution Guidelines](#contribution-guidelines)
+- [License](#license)
 
-<center>
+---
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
-
-</center>
-
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
-
-## TL;DR
-
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
-
-## Built With
-
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
-
-This project was built using these technologies.
-
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+## Introduction
+This is a fully responsive, multi-page personal portfolio website built with React.js. It is designed to showcase projects, technical skills, and a resume, and can be easily customized for any developer or professional. The project features a modern UI, smooth navigation, and a clean codebase for easy maintenance and extension.
 
 ## Features
+- Multi-page layout (Home, About, Projects, Resume)
+- Responsive design for all devices
+- Animated particle background
+- Project showcase with live demo and GitHub links
+- Downloadable resume (PDF)
+- Technical skills and tools section
+- Preloader animation
+- Scroll-to-top functionality
+- Social media links in the footer
 
-**📖 Multi-Page Layout**
+## Project Structure
+```
+Personal_Portfolio/
+├── public/
+│   ├── favicon.png
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   ├── style.css
+│   ├── App.css
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   ├── Pre.js
+│   │   ├── Particle.js
+│   │   ├── ScrollToTop.js
+│   │   ├── Home/
+│   │   │   ├── Home.js
+│   │   │   ├── Home2.js
+│   │   │   └── Type.js
+│   │   ├── About/
+│   │   │   ├── About.js
+│   │   │   ├── AboutCard.js
+│   │   │   ├── Techstack.js
+│   │   │   ├── Toolstack.js
+│   │   │   └── Github.js
+│   │   ├── Projects/
+│   │   │   ├── Projects.js
+│   │   │   └── ProjectCards.js
+│   │   └── Resume/
+│   │       └── ResumeNew.js
+│   └── Assets/
+│       └── ...
+├── package.json
+└── README.md
+```
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+## Technology Stack
+- **Frontend:** React.js, React-Bootstrap, CSS3
+- **Routing:** React Router DOM
+- **State Management:** React Hooks
+- **PDF Rendering:** @react-pdf/renderer, react-pdf
+- **Icons:** react-icons
+- **Particle Animation:** react-tsparticles
+- **Other Libraries:** axios, typewriter-effect, react-github-calendar
 
-**📱 Fully Responsive**
+## Installation & Setup
+### Prerequisites
+- Node.js (v14 or above)
+- npm (v6 or above)
 
-## Getting Started
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Personal_Portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+## Usage Guide
+- All main components are in `src/components/`.
+- Edit content in the Home, About, Projects, and Resume sections to personalize.
+- Add or update projects in `src/components/Projects/Projects.js`.
+- Update skills and tools in `src/components/About/Techstack.js` and `Toolstack.js`.
+- Replace the resume PDF in `src/Assets/` and update the import in `ResumeNew.js`.
+- Customize styles in `src/style.css` and `src/App.css`.
 
-## 🛠 Installation and Setup Instructions
+## Component Details
+- **App.js:** Main entry, handles routing and layout.
+- **Navbar.js:** Responsive navigation bar with links to all pages.
+- **Footer.js:** Social media links and copyright.
+- **Pre.js:** Preloader animation shown on initial load.
+- **Particle.js:** Animated background effect.
+- **ScrollToTop.js:** Scrolls to top on route change.
+- **Home/**: Landing page, introduction, and animated typewriter effect.
+- **About/**: About section, skills (`Techstack.js`), tools (`Toolstack.js`), and GitHub calendar.
+- **Projects/**: Project showcase with cards, GitHub/demo links, and images.
+- **Resume/**: Displays and allows download of a PDF resume.
 
-1. Installation: `npm install`
+## Styling & Theming
+- Uses CSS custom properties for easy color and theme changes.
+- Responsive design with media queries for mobile support.
+- Custom styles in `src/style.css` and `src/App.css`.
+- Uses Bootstrap for layout and components.
 
-2. In the project directory, you can run: `npm start`
+## Deployment
+- To build for production:
+  ```bash
+  npm run build
+  ```
+- Deploy the contents of the `build/` directory to any static hosting service (e.g., Vercel, Netlify, GitHub Pages).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+## Contribution Guidelines
+1. Fork the repository and create your branch from `main`.
+2. Make your changes and test thoroughly.
+3. Submit a pull request with a clear description of your changes.
 
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+## License
+This project is open source and available under the [MIT License](LICENSE).
