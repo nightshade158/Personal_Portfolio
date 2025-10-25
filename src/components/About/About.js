@@ -19,10 +19,9 @@ function About() {
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
-            }}
-          >
+            }}>
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Know Who <strong className="purple">I am</strong>
             </h1>
             <Aboutcard />
           </Col>

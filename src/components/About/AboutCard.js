@@ -24,15 +24,18 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Building projects that excite me
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Open source contribution
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Exploring new domains in Tech
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "The most important thing is to be able to think what you want, not to say what you want."{" "}
+            "Software and Cathedrals are basically the same. First we build them and then we pray."{" "}
           </p>
           <footer className="blockquote-footer">Collin</footer>
         </blockquote>

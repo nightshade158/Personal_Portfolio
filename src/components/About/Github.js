@@ -1,4 +1,3 @@
-import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 
@@ -20,3 +19,30 @@ function Github() {
 }
 
 export default Github;
+
+/* The below code is under construction */
+
+
+/* import { Row } from "react-bootstrap";
+import { UserProfileDetails } from "react-leetcode";
+
+function Github() {
+  return (
+    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
+        My <strong className="purple">LeetCode</strong> Stats
+      </h1>
+        <UserProfileDetails
+          userName="nightshade158"
+          theme={{
+            primaryColor: "rgba(192,132,245,1)",   // matching purple from your GitHub code
+            secondaryColor: "rgba(209,213,219,1)", // light gray
+            bgColor: "rgba(255,255,255,1)"         // white background
+          }}
+        />
+    </Row>
+  );
+}
+
+export default Github;
+ */
