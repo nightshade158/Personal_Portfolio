@@ -18,39 +18,67 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-            I'm a passionate developer who enjoys turning ideas into real-world 
-            solutions through code.
-              <br />
-              <br />I am comfortable working with core languages like
-              <i>
-                <b className="purple"> C++, Python and Java. </b>
-              </i>
-              <br />
-              <br />I also love building full-stack applications using 
-              <i>
-                <b className="purple"> Node.js and modern frameworks like React.js </b>
-              </i>
-              <br />
-              <br />My interests lies in &nbsp;
-              <i>
-                <b className="purple">creating impactful web technologies, working on end-to-end systems</b> and
-                exploring domains like{" "}
-                <b className="purple">
-                cloud computing and security-focused tools
-                </b>
-              </i>
-              <br />
-              <br />
-              I'm always curious, always learning — whether it's
-              <b className="purple">{" "}optimizing backend APIs</b> or
-              <i>
-                <b className="purple">
-                  {" "}
-                  experimenting with new tech stacks.
-                </b>
-              </i>
-            </p>
+<p className="home-about-body">
+  I am a passionate and versatile{" "}
+  <i>
+    <b className="purple">
+      Software Developer, OS Architect, Full Stack Developer, DevOps Engineer, Cloud Architect, Android Developer
+    </b>
+  </i>{" "}
+  with experience in turning ideas into real-world solutions through{" "}
+  <i>
+    <b className="purple">C++, Python, Java</b>
+  </i>.
+  <br />
+  <br />
+  I have hands-on experience building{" "}
+  <i>
+    <b className="purple">Full-Stack Applications</b>
+  </i>{" "}
+  using{" "}
+  <i>
+    <b className="purple">Node.js, React.js</b>
+  </i>{" "}
+  and designing and optimizing{" "}
+  <i>
+    <b className="purple">Backend Systems, APIs</b>
+  </i>{" "}
+  for <b className="purple">performance, scalability, and security</b>.
+  <br />
+  <br />
+  My expertise spans{" "}
+  <i>
+    <b className="purple">Cloud Architecture, DevOps</b>
+  </i>{" "}
+  where I deploy, manage, and monitor scalable{" "}
+  <i>
+    <b className="purple">cloud solutions, CI/CD pipelines</b>
+  </i>{" "}
+  to streamline development workflows and ensure operational efficiency.
+  <br />
+  <br />
+  I also create{" "}
+  <i>
+    <b className="purple">Android Applications</b>
+  </i>{" "}
+  and develop{" "}
+  <i>
+    <b className="purple">Security-Focused Tools, secure systems</b>
+  </i>{" "}
+  to deliver robust, end-to-end solutions across multiple platforms.
+  <br />
+  <br />
+  Constantly curious and always learning, I explore new technologies, optimize processes, and bridge the gap between{" "}
+  <i>
+    <b className="purple">innovative ideas</b>
+  </i>{" "}
+  and{" "}
+  <i>
+    <b className="purple">practical, high-quality implementations</b>
+  </i>{" "}
+  to make a meaningful impact.
+</p>
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
